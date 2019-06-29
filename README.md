@@ -1,4 +1,4 @@
-Promocodes
+Promocodes - React Application
 
 Promocodes application setup
 
