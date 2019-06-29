@@ -169,6 +169,9 @@ class App extends Component {
         />
         <div className="container-fluid">
           <div className="form-group form-group-lg">
+            <div className="col-sm-2 small" style={{ fontSize: "1.5em" }}>
+              Services
+            </div>
             <label
               className="col-sm-2 control-label small"
               htmlFor="search"

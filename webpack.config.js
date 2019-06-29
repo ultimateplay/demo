@@ -23,7 +23,7 @@ module.exports = {
           options: {
             name: "[name].[ext]",
             outputPath: "./fonts",
-            publicPath: "http://localhost:8080/"
+            publicPath: "./fonts"
           }
         }
       },
@@ -42,7 +42,7 @@ module.exports = {
     extensions: ["*", ".js"]
   },
   output: {
-    path: path.join(__dirname + "dist"),
+    path: __dirname + "/dist",
     publicPath: "./",
     filename: "bundle.js"
   },
@@ -53,8 +53,5 @@ module.exports = {
       title: "Hello Webpack bundled JavaScript Project",
       template: "./src/index.html"
     })
-  ],
-  devServer: {
-    contentBase: "./dist"
-  }
+  ]
 };

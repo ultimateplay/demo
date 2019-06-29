@@ -8,15 +8,28 @@ export default class Balance extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="d-flex container-fluid">
-          <div className="col-sm-1">
-            <p>Balance</p>
-            <p>{this.props.balance}</p>
+        <div
+          className="d-flex container-fluid"
+          style={{ paddingBottom: "20px" }}
+        >
+          <div style={{ lineHeight: "17px", width: "5.5em" }}>
+            <div style={{ fontSize: "0.6em", color: "grey" }}>Balance</div>
+            <div style={{ fontSize: "1em" }}>
+              {this.props.balance
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+              $
+            </div>
           </div>
 
-          <div className="col-sm-1">
-            <p>Payout</p>
-            <p>{this.props.next_payout}</p>
+          <div style={{ lineHeight: "17px", width: "5.5em" }}>
+            <div style={{ fontSize: "0.6em", color: "grey" }}>Payout</div>
+            <div style={{ fontSize: "1em" }}>
+              {this.props.next_payout
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, " ")}{" "}
+              $
+            </div>
           </div>
         </div>
       </React.Fragment>

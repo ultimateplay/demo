@@ -7,12 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Provider } from "react-redux";
 import store from "./store";
-import "@fortawesome/fontawesome-free/js/fontawesome";
-import "@fortawesome/fontawesome-free/js/solid";
-import "@fortawesome/fontawesome-free/js/regular";
-import "@fortawesome/fontawesome-free/js/brands";
-
-//ReactDOM.render(<div>HQ</div>, document.getElementById("root"));
 
 ReactDOM.render(
   <Provider store={store}>
