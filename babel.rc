@@ -1,0 +1,16 @@
+  {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/polyfill"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }
+    ]
+  }
+
+  
