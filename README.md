@@ -2,7 +2,7 @@ Promocodes - React Application
 
 Promocodes application setup
 
-md promocodes  
+git clone https://github.com/ultimateplay/promocodes.git  
 cd promocodes  
 npm install  
 sudo npm install http-server -g  
